@@ -24,3 +24,7 @@ button {
 button:hover {
   transform: scale(1.05);
 }
+
+section {
+  padding-bottom: 2rem;
+}
