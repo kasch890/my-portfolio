@@ -6,6 +6,8 @@ function About() {
       <p>
         I'm Kai Fernandes, a software developer focused on full-stack development,
         UX design, and data-driven applications.
+
+        TESTING CHANGES FOR DEPLOYMENT
       </p>
     </section>
   );
