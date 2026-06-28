@@ -1,25 +1,31 @@
 import Navbar from "./components/Navbar";
-import About from "./pages/About";
-import Projects from "./pages/Projects";
-import Skills from "./pages/Skills";
-import Contact from "./pages/Contact";
+import About from "./sections/About";
+import Projects from "./sections/Projects";
+import Skills from "./sections/Skills";
+import Contact from "./sections/Contact";
 
 function App() {
   return (
     <>
-      <Navbar />
-
-      <main>
-        <section id="home">
+    <Navbar />
+      <section id="home">
+        <main>
           <h1>Kai Fernandes</h1>
           <p>Software Developer | UX Designer | MS Software Development</p>
-        </section>
-
+        </main>
+      </section>
+      <section id="about">
         <About />
+      </section>
+      <section id="projects">
         <Projects />
+      </section>
+      <section id="skills">
         <Skills />
+      </section>
+      <section id="contact">
         <Contact />
-      </main>
+      </section>
     </>
   );
 }

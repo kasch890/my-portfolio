@@ -2,10 +2,11 @@
     position: fixed;
     top: 0;
     width: 100%;
+    height: var(--navbar-height);
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 1rem 2rem;
+    padding: 0 2rem;
     background-color: var(--bg);
     border-bottom: 1px solid var(--border);
     z-index: 1000;
