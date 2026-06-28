@@ -1,9 +1,9 @@
-import Home from "./sections/Home";
+import Home from "./components/HomeSection";
 import Navbar from "./components/Navbar";
-import About from "./sections/About";
-import Projects from "./sections/Projects";
-import Skills from "./sections/Skills";
-import Contact from "./sections/Contact";
+import About from "./components/AboutSection";
+import Projects from "./components/ProjectsSection";
+import Skills from "./components/SkillsSection";
+import Contact from "./components/ContactSection";
 
 function App() {
   return (
