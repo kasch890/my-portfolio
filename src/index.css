@@ -94,7 +94,7 @@ html {
 
 section{
   scroll-margin-top: var(--navbar-height);
-  padding: 60px 2rem;
+  padding: 20px 2rem;
 }
 
 #home{

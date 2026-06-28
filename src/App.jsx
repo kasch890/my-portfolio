@@ -1,3 +1,4 @@
+import Home from "./sections/Home";
 import Navbar from "./components/Navbar";
 import About from "./sections/About";
 import Projects from "./sections/Projects";
@@ -9,10 +10,7 @@ function App() {
     <>
     <Navbar />
       <section id="home">
-        <main>
-          <h1>Kai Fernandes</h1>
-          <p>Software Developer | UX Designer | MS Software Development</p>
-        </main>
+        <Home />
       </section>
       <section id="about">
         <About />
