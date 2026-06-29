@@ -1,5 +1,6 @@
 import ProjectCard from "./ProjectCard";
 import "../styles/ProjectSection.css";
+import DataParsingImg from "../assets/ExampleDataParsingOutput.png";
 
 const projectsData = [
   {
@@ -21,7 +22,7 @@ const projectsData = [
     title: "BariatricPath",
     repoUrl:
       "https://github.com/BUMETCS673/cs673olsum26project-cs673olsum26team1",
-    image: null,
+    image: "null",
     role: "Software Developer / Co-Lead",
     tools: ["React", "Vitest", "Docker", "GitHub Actions", "DigitalOcean"],
     problem:
@@ -36,7 +37,8 @@ const projectsData = [
   {
     title: "Survey Data Analysis Pipeline",
     repoUrl: "",
-    image: null,
+    image: DataParsingImg,
+    caption: "Example output for the the survey data analysis pipeline.",
     role: "Software Developer / Data Scientist",
     tools: ["Python", "Pandas", "NumPy", "PyCharm"],
     problem:

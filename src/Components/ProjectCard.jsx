@@ -3,6 +3,7 @@ function ProjectCard({ project }) {
     title,
     repoUrl,
     image,
+    caption,
     role,
     tools,
     problem,
@@ -21,7 +22,14 @@ function ProjectCard({ project }) {
         <div className="project-card__top">
           <div className="project-card__image">
             {image ? (
-              <img src={image} alt={`${title} screenshot`} />
+              <figure className="project-card__figure">
+                <img src={image} alt={`${title} screenshot`} />
+                {caption && (
+                  <figcaption className="project-card__caption">
+                    {caption}
+                  </figcaption>
+                )}
+              </figure>
             ) : (
               <div className="project-card__image-placeholder" aria-hidden="true" />
             )}
