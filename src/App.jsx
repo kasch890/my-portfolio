@@ -4,6 +4,7 @@ import About from "./components/AboutSection";
 import Projects from "./components/ProjectsSection";
 import Skills from "./components/SkillsSection";
 import Contact from "./components/ContactSection";
+import Design from "./components/DesignSection";
 import "./App.css";
 
 function App() {
@@ -18,6 +19,9 @@ function App() {
       </section>
       <section id="projects" className="page-section">
         <Projects />
+      </section>
+      <section id="design" className="page-section">
+        <Design />
       </section>
       <section id="skills" className="page-section">
         <Skills />
