@@ -1,0 +1,148 @@
+/* ----- Layout ----- */
+.project-list {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+/* ----- Card shell ----- */
+.project-card {
+  background-color: #0f1115;
+  border: 1px solid #23262e;
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+.project-card__header {
+  background-color: #1b1e25;
+  padding: 1.1rem 1.5rem;
+  text-align: center;
+}
+
+.project-card__header h3 {
+  margin: 0;
+  color: #f3f4f6;
+  font-size: 1.1rem;
+  font-weight: 600;
+}
+
+.project-card__body {
+  padding: 1.75rem;
+  color: #d7d9dd;
+}
+
+/* ----- Top row: image + meta ----- */
+.project-card__top {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2rem;
+  margin-bottom: 1.75rem;
+}
+
+.project-card__image {
+  flex: 0 0 320px;
+  width: 320px;
+  border-radius: 6px;
+  overflow: hidden;
+  display: flex;
+  align-items: flex-start;
+}
+
+.project-card__image img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+.project-card__figure {
+  margin: 0;
+  width: 100%;
+}
+
+.project-card__caption {
+  margin-top: 0.5rem;
+  font-size: 0.7rem;
+  line-height: 1.4;
+  color: #9a9ea6;
+  text-align: center;
+}
+
+/* Checkerboard placeholder, matching the screenshot's empty image slots */
+.project-card__image-placeholder {
+  width: 100%;
+  height: 280px;
+  background-image: linear-gradient(45deg, #e5e5e5 25%, transparent 25%),
+    linear-gradient(-45deg, #e5e5e5 25%, transparent 25%),
+    linear-gradient(45deg, transparent 75%, #e5e5e5 75%),
+    linear-gradient(-45deg, transparent 75%, #e5e5e5 75%);
+  background-size: 24px 24px;
+  background-position: 0 0, 0 12px, 12px -12px, -12px 0;
+  background-color: #fafafa;
+}
+
+.project-card__meta {
+  flex: 1 1 220px;
+  min-width: 200px;
+  font-size: 0.95rem;
+  line-height: 1.5;
+}
+
+.project-card__meta p {
+  margin: 0 0 0.9rem;
+}
+
+.project-card__tools-label {
+  margin-bottom: 0.4rem;
+}
+
+.project-card__tools-list {
+  margin: 0 0 0.9rem;
+  padding-left: 1.1rem;
+}
+
+.project-card__tools-list li {
+  margin-bottom: 0.25rem;
+}
+
+.project-card__meta a {
+  color: #6ea8fe;
+  text-decoration: none;
+}
+
+.project-card__meta a:hover {
+  text-decoration: underline;
+}
+
+/* ----- Detail fields (Problem, Key Decisions, etc.) ----- */
+.project-card__details p {
+  margin: 0 0 1.1rem;
+  line-height: 1.6;
+  font-size: 0.97rem;
+}
+
+.project-card__details p:last-child {
+  margin-bottom: 0;
+}
+
+.project-card__label {
+  text-decoration: underline;
+  font-weight: 600;
+  color: #f3f4f6;
+}
+
+/* ----- Responsive: stack image above meta on narrow screens ----- */
+@media (max-width: 600px) {
+  .project-card__top {
+    flex-direction: column;
+  }
+
+  .project-card__image {
+    flex: none;
+    width: 100%;
+    max-width: 320px;
+  }
+
+  .project-card__image-placeholder {
+    height: 220px;
+  }
+}
