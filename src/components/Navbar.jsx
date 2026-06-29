@@ -3,7 +3,7 @@ import '../styles/Navbar.css';
 function Navbar() {
     return (
       <nav className="navbar">
-        <h2 className="logo">KF</h2>
+        <h2 className="logo">K!F</h2>
   
         <ul className="nav-links">
           <li><a href ="#home">Home</a></li>

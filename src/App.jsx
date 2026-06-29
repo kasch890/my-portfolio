@@ -16,15 +16,19 @@ function App() {
       </section>
       <section id="about" className="page-section">
         <About />
+        <hr></hr>
       </section>
       <section id="projects" className="page-section">
         <Projects />
+        <hr></hr>
       </section>
       <section id="design" className="page-section">
         <Design />
+        <hr></hr>
       </section>
       <section id="skills" className="page-section">
         <Skills />
+        <hr></hr>
       </section>
       <section id="contact" className="page-section">
         <Contact />
