@@ -11,15 +11,13 @@ const projectsData = [
     repoUrl: "https://github.com/kasch890/my-portfolio",
     image: PortfolioFigma,
     role: "Software Developer",
-    tools: ["React", "JavaScript", "CSS", "GitHub Pages"],
-    problem:
+    tools: ["React", "JavaScript", "CSS", "Vite"],
+    summary:
       "Needed a single place to showcase my projects, skills, and experience to potential employers and collaborators.",
     keyDecisions:
       "Chose React for component reuse and a clean build pipeline over a static HTML/CSS site, so the project list and other sections could scale without duplicating markup.",
     creativeProcess:
       "Started with a content outline of the sections I wanted (About, Projects, Skills, Contact), then built each as its own component, iterating on layout and styling pass by pass.",
-    impact:
-      "The site you're currently looking at — a living portfolio I can keep extending as I take on new projects.",
   },
   {
     title: "BariatricPath",
@@ -28,7 +26,7 @@ const projectsData = [
     image: BariPath,
     role: "Software Developer / Co-Lead",
     tools: ["React", "Vitest", "Docker", "GitHub Actions", "DigitalOcean"],
-    problem:
+    summary:
       "Patients preparing for or recovering from bariatric surgery lacked a single tool for educational resources, progress tracking, and personalized recommendations.",
     keyDecisions:
       "Took on a co-lead/configuration role covering infrastructure smoke testing and CI/CD, while also building out the Director Dashboard feature end to end.",
@@ -44,7 +42,7 @@ const projectsData = [
     caption: "Example output for the the survey data analysis pipeline.",
     role: "Software Developer / Data Scientist",
     tools: ["Python", "Pandas", "NumPy", "PyCharm"],
-    problem:
+    summary:
       "Client data reporting was taking far longer than expected and cost valuable manpower — each report took hours of manual work.",
     keyDecisions:
       "Originally the employee wanted me to build the charts in Excel so they could edit them manually. I found too many limitations there and couldn't produce the desired charts that way.",

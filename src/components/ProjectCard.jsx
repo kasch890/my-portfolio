@@ -6,11 +6,13 @@ function ProjectCard({ project }) {
     caption,
     role,
     tools,
-    problem,
+    summary,
     keyDecisions,
     creativeProcess,
     impact,
   } = project;
+
+  const hasDetails = summary || keyDecisions || creativeProcess || impact;
 
   return (
     <article className="project-card">
@@ -20,8 +22,8 @@ function ProjectCard({ project }) {
 
       <div className="project-card__body">
         <div className="project-card__top">
-          <div className="project-card__image">
-            {image ? (
+          {image && (
+            <div className="project-card__image">
               <figure className="project-card__figure">
                 <img src={image} alt={`${title} screenshot`} />
                 {caption && (
@@ -30,10 +32,8 @@ function ProjectCard({ project }) {
                   </figcaption>
                 )}
               </figure>
-            ) : (
-              <div className="project-card__image-placeholder" aria-hidden="true" />
-            )}
-          </div>
+            </div>
+          )}
 
           <div className="project-card__meta">
             <p>
@@ -57,20 +57,32 @@ function ProjectCard({ project }) {
           </div>
         </div>
 
-        <div className="project-card__details">
-          <p>
-            <span className="project-card__label">Problem:</span> {problem}
-          </p>
-          <p>
-            <span className="project-card__label">Key Decisions:</span> {keyDecisions}
-          </p>
-          <p>
-            <span className="project-card__label">Creative Process:</span> {creativeProcess}
-          </p>
-          <p>
-            <span className="project-card__label">Impact:</span> {impact}
-          </p>
-        </div>
+        {hasDetails && (
+          <div className="project-card__details">
+            {summary && (
+              <p>
+                <span className="project-card__label">Summary:</span> {summary}
+              </p>
+            )}
+            {keyDecisions && (
+              <p>
+                <span className="project-card__label">Key Decisions:</span>{" "}
+                {keyDecisions}
+              </p>
+            )}
+            {creativeProcess && (
+              <p>
+                <span className="project-card__label">Creative Process:</span>{" "}
+                {creativeProcess}
+              </p>
+            )}
+            {impact && (
+              <p>
+                <span className="project-card__label">Impact:</span> {impact}
+              </p>
+            )}
+          </div>
+        )}
       </div>
     </article>
   );
