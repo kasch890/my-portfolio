@@ -13,6 +13,17 @@ const designData = [
     process:
       "Describe your design process and the key choices you made here — what problem you were solving, how the wireframe evolved, and why you made the visual/interaction decisions you did in the final version.",
   },
+  {
+    title: "Example UX Case Study",
+    figmaUrl: "",
+    role: "UX Designer",
+    wireframeImage: null,
+    wireframeCaption: "Low-fidelity wireframe",
+    finalImage: null,
+    finalCaption: "Final high-fidelity design",
+    process:
+      "Describe your design process and the key choices you made here — what problem you were solving, how the wireframe evolved, and why you made the visual/interaction decisions you did in the final version.",
+  },
 ];
 
 function DesignSection() {
