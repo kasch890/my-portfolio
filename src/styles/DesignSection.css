@@ -1,0 +1,32 @@
+.design-card__images {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 32px;
+    flex-wrap: wrap;
+  }
+  
+  .design-card__image {
+    display: flex;
+    justify-content: center;
+  }
+  
+  .project-card__figure {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0;
+  }
+  
+  .project-card__figure img {
+    max-height: 340px;   /* controls the "similar size" — tweak this number */
+    width: auto;
+    max-width: 100%;
+    object-fit: contain;
+    display: block;
+  }
+  
+  .project-card__caption {
+    text-align: center;
+    margin-top: 8px;
+  }

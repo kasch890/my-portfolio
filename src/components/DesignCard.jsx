@@ -1,3 +1,4 @@
+import '../styles/DesignSection.css';
 function DesignCard({ design }) {
     const {
       title,

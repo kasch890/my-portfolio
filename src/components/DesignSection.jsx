@@ -22,7 +22,7 @@ const designData = [
     wireframeImage: MoodlinkWireframe,
     wireframeCaption: "Figma Wireframe",
     finalImage: MoodlinkFinished,
-    finalCaption: "",
+    finalCaption: "Launched Website",
     process:
       "I wanted our team to focus on the ease of use fo rthe user, where it ideally takes <20 seconds to log a quick mood into the tracker. At the same time our team wanted users to be able to view metrics and track progress over time. I started with a view pencil and paper sketches which I brought to teh team to review. I then designed the wireframe in Google Canvas, later remaking it in Figma for the sake of practicing the software and working on building reusable components. After confirmation from the team, I made some design changes to the actual website, the result of which is shown on the right. Our original plan was to create a mobile app, but ended up switching to a desktop app so things got moved around a bit, but my wireframe provided a cohesive vision for us all to work from.",
   },
