@@ -27,7 +27,7 @@ const designData = [
 function DesignSection() {
   return (
     <section id="ux-designs">
-      <h2>UX Designs</h2>
+      <h2>UX / UI Research and Design</h2>
       <div className="project-list">
         {designData.map((design) => (
           <DesignCard key={design.title} design={design} />
