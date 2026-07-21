@@ -1,12 +1,15 @@
 import ProjectCard from "./ProjectCard";
 import "../styles/ProjectSection.css";
 import DataParsingImg from "../assets/ExampleDataParsingOutput.png";
+import PortfolioFigma from "../assets/PortfolioFigma.png";
+import BariPath from "../assets/BPDirectorDashboard.png";
+
 
 const projectsData = [
   {
     title: "Personal Portfolio Website",
     repoUrl: "https://github.com/kasch890/my-portfolio",
-    image: null,
+    image: PortfolioFigma,
     role: "Software Developer",
     tools: ["React", "JavaScript", "CSS", "GitHub Pages"],
     problem:
@@ -22,7 +25,7 @@ const projectsData = [
     title: "BariatricPath",
     repoUrl:
       "https://github.com/BUMETCS673/cs673olsum26project-cs673olsum26team1",
-    image: "null",
+    image: "BariPath",
     role: "Software Developer / Co-Lead",
     tools: ["React", "Vitest", "Docker", "GitHub Actions", "DigitalOcean"],
     problem:
@@ -36,7 +39,7 @@ const projectsData = [
   },
   {
     title: "Survey Data Analysis Pipeline",
-    repoUrl: "",
+    repoUrl: "https://github.com/kasch890/BlankSlateREDACTED",
     image: DataParsingImg,
     caption: "Example output for the the survey data analysis pipeline.",
     role: "Software Developer / Data Scientist",
