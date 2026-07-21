@@ -25,7 +25,7 @@ const projectsData = [
     title: "BariatricPath",
     repoUrl:
       "https://github.com/BUMETCS673/cs673olsum26project-cs673olsum26team1",
-    image: "BariPath",
+    image: BariPath,
     role: "Software Developer / Co-Lead",
     tools: ["React", "Vitest", "Docker", "GitHub Actions", "DigitalOcean"],
     problem:
