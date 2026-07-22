@@ -1,3 +1,26 @@
+:root {
+  /* Backgrounds — layered so cards read as distinct from the page */
+  --bg-page: #0a0b0d;
+  --bg-card: #14161c;        /* one step lighter than page */
+  --bg-card-header: #1c1f27; /* one step lighter than card */
+
+  /* Borders */
+  --border-subtle: #23262e;
+  --border-accent: rgba(61, 220, 132, 0.35); /* green at low opacity, for framing */
+
+  /* Accent — unify on one green (your button color) */
+  --accent-green: #3ddc84; /*#228B22*/
+  --accent-green-dim: rgba(61, 220, 132, 0.15);
+
+  /* Text */
+  --text-primary: #e5e7eb;   /* bumped up from #d7d9dd for contrast */
+  --text-secondary: #9a9ea6; /* keep dim, for labels/meta only */
+}
+
+body {
+  background-color: var(--bg-page);
+}
+
 main {
   /* min-height: 10vh; */
   display: flex;
@@ -26,13 +49,27 @@ button:hover {
 }
 
 section {
-  padding-bottom: 2rem;
+  padding-bottom: 1.5rem;
 }
 
-section h2{
+section h2 {
   padding-bottom: 1rem;
   text-align: center;
-  font-size: 1.5rem;
+  font-size: 1.75rem;        /* was 1.5rem — bigger step up from card h3 */
+  font-weight: 700;
+  letter-spacing: 0.02em;
+  color: var(--text-primary);
+  position: relative;
+}
+
+section h2::after {
+  content: "";
+  display: block;
+  width: 48px;
+  height: 3px;
+  background: var(--accent-green);
+  margin: 0.6rem auto 0;
+  border-radius: 2px;
 }
 
 .page-section {
@@ -48,3 +85,17 @@ section h2{
     padding-right: 2rem;
   }
 }
+
+.section-divider {
+  border: none;
+  height: 1px;
+  background: linear-gradient(
+    to right,
+    transparent,
+    var(--accent-green-dim) 20%,
+    var(--accent-green-dim) 80%,
+    transparent
+  );
+  margin: 2rem 0;
+}
+
