@@ -149,7 +149,7 @@
   .project-card__image {
     flex: none;
     width: 100%;
-    max-width: 320px;
+    max-width: 400px;
   }
 
   .project-card__image-placeholder {
@@ -167,8 +167,8 @@
 }
 
 .design-card__image {
-  flex: 1 1 280px;
-  min-width: 240px;
+  flex: 1 1 400px;
+  min-width: 280px;
   border-radius: 6px;
   overflow: hidden;
 }
