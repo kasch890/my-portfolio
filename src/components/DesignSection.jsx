@@ -23,7 +23,7 @@ const designData = [
     "Our team's core goal was ease of use — ideally allowing a user to log a mood in under 20 seconds — while still giving users a way to view metrics and track progress over time. I started with a few pencil-and-paper sketches, which I brought to the team for review. From there, I built out the wireframe in Google Canvas, then later remade it in Figma to practice the software and develop reusable components. After the team confirmed the direction, I translated the wireframe into design changes on the live site, shown on the right. Our original plan was to build a mobile app, but we pivoted to a desktop app partway through, which shifted some layout decisions — throughout that change, the wireframe gave the team a consistent, shared vision to design against.",
   },
   {
-    title: "Bariatric Path prototyping",
+    title: "Bariatric Path Prototyping",
     role: "UX Designer",
     summary:
       "Info Soon to Come!",
