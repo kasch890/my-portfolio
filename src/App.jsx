@@ -18,12 +18,12 @@ function App() {
         <About />
         <hr></hr>
       </section>
-      <section id="coding" className="page-section">
-        <Projects />
-        <hr></hr>
-      </section>
       <section id="uxui" className="page-section">
         <Design />
+        <hr></hr>
+      </section>
+      <section id="coding" className="page-section">
+        <Projects />
         <hr></hr>
       </section>
       <section id="skills" className="page-section">

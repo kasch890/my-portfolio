@@ -5,16 +5,16 @@ import MoodlinkFinished from "../assets/MoodlinkFinished.png";
 
 const designData = [
   {
-    title: "UX Research - Usability Tests",
-    role: "UX Researcher",
-    summary:"I led the design and execution of usability testing, including recruiting participants across distinct client groups, developing standardized testing protocols, and analyzing results to deliver actionable insights to the product team.",
+    title: "Usability Tests and Wireframing",
+    role: "UX Researcher & Designer",
+    summary: "I led the design and execution of usability testing, including recruiting participants across distinct client groups, developing standardized testing protocols, and analyzing results to deliver actionable insights to the product team. I followed through with my findings to develop wireframes and prototypes to implement suggested changes.",
     process:
-    "I began by meeting with the team to identify what they wanted feedback on and which product questions needed answers. From there, I designed a structured testing protocol to ensure every participant received a consistent experience, and reviewed all test questions for biased or leading language before finalizing them. I then recruited and scheduled test participants, ran and proctored each session, and organized responses into spreadsheets categorized by question for easier analysis. Once testing was complete, I synthesized the findings into a summary for the product team, highlighting key takeaways and flagging areas of concern.",
+      "I began by meeting with the team to identify what they wanted feedback on and which product questions needed answers. From there, I designed a structured testing protocol to ensure every participant received a consistent experience, and reviewed all test questions for biased or leading language before finalizing them. I then recruited and scheduled test participants, ran and proctored each session, and organized responses into spreadsheets categorized by question for easier analysis. Once testing was complete, I synthesized the findings into a summary for the product team, highlighting key takeaways and flagging areas of concern. After meeting with the product team, I used Figma to develop wireframes and prototypes. I also conducted secondary usability tests where I compared the original designs with proposed changes and got user feedback once again.",
   },
   {
     title: "MoodLink Design",
     figmaUrl: "https://www.figma.com/design/HUgwaYWVtY3uCN7DzS0Cbd/Mood-Link-Design?node-id=5-5&t=qXZGtwl9yQUo4Urf-1",
-    role: "UX Designer & UI Developer",
+    role: "UX Designer & Developer",
     image1: MoodlinkWireframe,
     image1Caption: "Figma Wireframe",
     image2: MoodlinkFinished,
@@ -33,7 +33,7 @@ const designData = [
 function DesignSection() {
   return (
     <section id="ux-designs">
-      <h2>UX / UI Research and Design</h2>
+      <h2>UX Research & Design</h2>
       <div className="project-list">
         {designData.map((design) => (
           <DesignCard key={design.title} design={design} />
